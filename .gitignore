@@ -1,0 +1,4 @@
+img-*.ppm
+check-*.jpg
+*.pdf
+.DS_Store
