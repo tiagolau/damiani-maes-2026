@@ -11,22 +11,22 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --ivory:    #F8F5F0;
-    --warm:     #EDE5D8;
-    --bege:     #C9A98A;
-    --card-bg:  #BFA090;
-    --dark-bg:  #2C1F14;
-    --rose:     #B87070;
-    --rose-pale:#F0E4DC;
-    --text:     #1E1410;
-    --gold:     #A0845A;
+    --ivory:    #F5F1EA;
+    --warm:     #C8A86E;
+    --bege:     #B09060;
+    --card-bg:  #A8895A;
+    --dark-bg:  #2C1F0E;
+    --rose:     #B87060;
+    --rose-pale:#EDE0CC;
+    --text:     #1E1208;
+    --gold:     #8C6E3A;
   }
 
   body {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     color: var(--text);
-    background: var(--ivory);
+    background: #EDE0CC;
     overflow-x: hidden;
   }
 
@@ -46,8 +46,8 @@
   /* ─── NAV ─── */
   nav {
     position: sticky; top: 0; z-index: 100;
-    background: var(--ivory);
-    border-bottom: 1px solid rgba(160,132,90,.2);
+    background: #EDE0CC;
+    border-bottom: 1px solid rgba(140,110,58,.25);
     padding: 14px 32px;
     display: flex; align-items: center; justify-content: space-between;
   }
@@ -68,7 +68,7 @@
   }
   .hero-photo {
     position: relative; overflow: hidden;
-    background: #C9A98A;
+    background: #A8895A;
     display: flex; flex-direction: column;
   }
   .hero-photo img {
@@ -88,7 +88,7 @@
   .hero-copy .eyebrow {
     font-size: .72rem; font-weight: 400;
     letter-spacing: .22em; text-transform: uppercase;
-    color: var(--rose); margin-bottom: 20px;
+    color: #8C6E3A; margin-bottom: 20px;
   }
   .hero-copy h1 {
     font-family: 'Cormorant Garamond', serif;
@@ -96,22 +96,22 @@
     font-weight: 300; line-height: 1.08;
     color: var(--text); margin-bottom: 24px;
   }
-  .hero-copy h1 em { font-style: italic; color: var(--rose); }
+  .hero-copy h1 em { font-style: italic; color: #8C6E3A; }
   .hero-copy p {
     font-size: .95rem; line-height: 1.75;
-    color: rgba(30,20,16,.65); max-width: 380px;
+    color: rgba(30,18,8,.6); max-width: 380px;
     margin-bottom: 36px;
   }
   .hero-copy .btn-wpp {
     display: inline-flex; align-items: center; gap: 10px;
-    background: var(--rose);
-    color: #fff; text-decoration: none;
+    background: #8C6E3A;
+    color: #EDE0CC; text-decoration: none;
     font-size: .82rem; font-weight: 400; letter-spacing: .1em; text-transform: uppercase;
     padding: 14px 28px; border-radius: 2px;
     transition: background .25s, transform .2s;
     width: fit-content;
   }
-  .hero-copy .btn-wpp:hover { background: #9d5d5d; transform: translateY(-2px); }
+  .hero-copy .btn-wpp:hover { background: #6E5228; transform: translateY(-2px); }
   .hero-copy .btn-wpp svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
 
   /* ─── SECTION TITLES ─── */
@@ -169,11 +169,11 @@
 
   /* card claro */
   .card.light .card-body { background: var(--warm); }
-  .card.light .card-body h3 { color: var(--text); }
-  .card.light .card-body .sub { color: rgba(30,20,16,.5); }
-  .card.light .card-body .price { color: var(--text); }
-  .card.light .card-body .price small { color: rgba(30,20,16,.6); }
-  .card.light .card-body .note { color: rgba(30,20,16,.45); }
+  .card.light .card-body h3 { color: var(--ivory); }
+  .card.light .card-body .sub { color: rgba(245,241,234,.65); }
+  .card.light .card-body .price { color: var(--ivory); }
+  .card.light .card-body .price small { color: rgba(245,241,234,.8); }
+  .card.light .card-body .note { color: rgba(245,241,234,.6); }
 
   /* card escuro */
   .card.dark .card-body { background: var(--dark-bg); }
@@ -192,8 +192,8 @@
   }
   .divider span {
     display: inline-block;
-    border-top: 1px solid rgba(160,132,90,.3);
-    border-bottom: 1px solid rgba(160,132,90,.3);
+    border-top: 1px solid rgba(140,110,58,.4);
+    border-bottom: 1px solid rgba(140,110,58,.4);
     padding: 14px 40px;
   }
 
@@ -201,27 +201,27 @@
   .gift-banner { display: grid; grid-template-columns: 1fr 1fr; margin-top: 60px; }
   .gift-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
   .gift-copy {
-    background: var(--rose);
+    background: #2C1F0E;
     display: flex; flex-direction: column;
     justify-content: center; align-items: flex-start;
     padding: clamp(32px, 5vw, 70px);
   }
   .gift-copy .label {
     font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
-    color: rgba(255,255,255,.7); margin-bottom: 16px;
+    color: rgba(200,168,110,.7); margin-bottom: 16px;
   }
   .gift-copy h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.8rem, 3.5vw, 3rem);
-    font-weight: 300; color: #fff; line-height: 1.15; margin-bottom: 20px;
+    font-weight: 300; color: #EDE0CC; line-height: 1.15; margin-bottom: 20px;
   }
   .gift-copy p {
     font-size: .9rem; line-height: 1.7;
-    color: rgba(255,255,255,.8); max-width: 360px; margin-bottom: 30px;
+    color: rgba(237,224,204,.65); max-width: 360px; margin-bottom: 30px;
   }
   .gift-copy a {
     display: inline-flex; align-items: center; gap: 10px;
-    background: #fff; color: var(--rose); text-decoration: none;
+    background: #A8895A; color: #EDE0CC; text-decoration: none;
     font-size: .78rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase;
     padding: 13px 26px; border-radius: 2px; transition: opacity .2s;
   }
@@ -284,7 +284,7 @@
   <div class="hero-photo">
     <img src="hero-familia.jpg" alt="Dia das Mães Damiani Home">
   </div>
-  <div class="hero-copy pc" style="background: var(--rose-pale);">
+  <div class="hero-copy pc" style="background: #EDE0CC;">
     <span class="eyebrow">12 de Maio · Dia das Mães</span>
     <h1>O presente<br>que ela<br><em>merece</em></h1>
     <p>Envolva sua mãe com o conforto e a elegância que só a Damiani Home oferece. Roupões, jogos de cama, toalhas, perfumes e muito mais.</p>
