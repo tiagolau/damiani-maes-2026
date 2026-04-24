@@ -1,4 +1,7 @@
 img-*.ppm
+img-*.jpg
 check-*.jpg
 *.pdf
 .DS_Store
+.vercel
+novas imagens/
